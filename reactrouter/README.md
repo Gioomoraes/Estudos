@@ -9,24 +9,6 @@ Este projeto é uma coleção de exemplos e anotações práticas sobre o uso do
 - [Vite](https://vitejs.dev/)
 - JavaScript
 
-## 📁 Estrutura do Projeto
-
-reactrouter/
-├── public/
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ └── ... (componentes reutilizáveis)
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ ├── About.jsx
-│ │ └── ... (outras páginas)
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── routes.jsx
-├── package.json
-└── vite.config.js
-
 ## 🧪 Funcionalidades Implementadas
 
 - **Configuração de rotas** utilizando `BrowserRouter`, `Routes` e `Route`
