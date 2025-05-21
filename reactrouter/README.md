@@ -6,7 +6,8 @@ Este projeto é uma coleção de exemplos e anotações práticas sobre o uso do
 
 - [React](https://reactjs.org/)
 - [React Router DOM](https://reactrouter.com/)
-- [Vite](https://vitejs.dev/) – para um ambiente de desenvolvimento rápido e moderno
+- [Vite](https://vitejs.dev/)
+- JavaScript
 
 ## 📁 Estrutura do Projeto
 
