@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import Product from "./pages/product";
 import Info from "./pages/Info";
 import NotFound from "./pages/NotFound";
+import SearchForm from "./pages/SearchForm";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -16,11 +18,13 @@ function App() {
       <h1>React Router</h1>
       <BrowserRouter>
         <Navbar />
+        <SearchForm />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products/:id" element={<Product />} />
           <Route path="/products/:id/info" element={<Info />} />
+          <Route path="/search" element={<Search />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
