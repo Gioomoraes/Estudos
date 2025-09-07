@@ -1,7 +1,12 @@
 import React from "react";
+import HookUseState from "../components/HookUseState";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <HookUseState />
+    </div>
+  );
 };
 
 export default Home;
