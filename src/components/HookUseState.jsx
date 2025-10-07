@@ -16,14 +16,20 @@ const HookUseState = () => {
 
   const [age, setAge] = useState(18);
 
+  const handleSubmit = (e) => {
+    e.prenventDefault();
+
+    console.log(age);
+  };
+
   return (
     <div>
       <h2>Hook useState</h2>
       <p>Variável: {userName}</p>
       <p>useState: {name}</p>
       <button onClick={changeNames}>Mudar Nomes</button>
-
-      <form>
+      <p>Digite a sua idade: </p>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={age}
