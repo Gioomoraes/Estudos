@@ -11,11 +11,22 @@ const HookUseEffect = () => {
     setNumber(number + 1);
   };
 
+  const [anotherNumber, setAnotherNumber] = useState(0);
+
+  useEffect(() => {
+    console.log("Executa quando o anotherNumber muda");
+  }, [anotherNumber]);
+
   return (
     <div>
       <h2>Use Effect</h2>
       <p>Número: {number}</p>
       <button onClick={changeSomething}>Executar</button>
+      <p>AnotherNumber {anotherNumber}</p>
+      <button onClick={() => setAnotherNumber(anotherNumber + 1)}>
+        {" "}
+        Muda anotherNumber
+      </button>
       <hr />
     </div>
   );
