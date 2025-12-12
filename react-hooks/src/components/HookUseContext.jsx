@@ -1,11 +1,11 @@
-import React from "react";
+import { createContext } from "react";
 
-const HookUseContext = () => {
+export const SomeContext = createContext();
+
+export const HookUseContext = ({ children }) => {
+  const contextValue = "testing context";
+
   return (
-    <div>
-      <h2>UseContext</h2>
-    </div>
+    <SomeContext.Provider value={contextValue}>{children}</SomeContext.Provider>
   );
 };
-
-export default HookUseContext;
