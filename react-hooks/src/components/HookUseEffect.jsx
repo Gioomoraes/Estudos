@@ -18,11 +18,10 @@ const HookUseEffect = () => {
   }, [anotherNumber]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log("Executa depois de 2 segundos");
-    }, 2000);
-
-    return () => clearTimeOut(timer);
+    //     const timer = setTimeout(() => {
+    //       console.log("Executa depois de 2 segundos");
+    //     }, 2000);
+    //     return () => clearTimeOut(timer);
   }, [anotherNumber]);
 
   return (
