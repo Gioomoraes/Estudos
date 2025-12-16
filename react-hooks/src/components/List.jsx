@@ -1,7 +1,16 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 const List = ({ getItems }) => {
-  return <div>List</div>;
+  const [myItems, setMyItems] = useState([]);
+
+  useEffect(() => {
+    console.log("Buscando os itens da base...");
+
+    setMyItems(getItems);
+  }, [getItems]);
+  return (
+    <div>{myItems && myItems.map((item) => <p key={item}>{item}</p>)}</div>
+  );
 };
 
 export default List;
