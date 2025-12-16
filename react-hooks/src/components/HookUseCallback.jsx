@@ -5,9 +5,9 @@ import List from "./List";
 const HookUseCallback = () => {
   const [counter, setCounter] = useState(0);
 
-  const getItemsFromDataBase = () => {
+  const getItemsFromDataBase = useCallback(() => {
     return [1, 2, 3];
-  };
+  }, []);
 
   return (
     <div>
