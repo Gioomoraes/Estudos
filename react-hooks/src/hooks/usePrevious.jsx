@@ -1,7 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useDebugValue } from "react";
 
 export const usePrevious = (value) => {
-  const ref = useRef;
+  const ref = useRef();
+
+  useDebugValue("-----CUSTOM HOOK E USEDEBUGVALUE-----");
+  useDebugValue("O numero anterior é: " + value);
 
   useEffect(() => {
     ref.current = value;
