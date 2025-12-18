@@ -8,6 +8,9 @@ const HookCustom = () => {
   return (
     <div>
       <h2>Custom Hook</h2>
+      <p>Atual: {number}</p>
+      <p>anterior: {previousValue}</p>
+      <button onClick={() => setNumber(Math.random())}>Alterar</button>
       <hr />
     </div>
   );
